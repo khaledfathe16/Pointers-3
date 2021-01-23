@@ -9,7 +9,7 @@ int func(int *p , int *maxf,int *minf,int s);
 
  void main(void){
 
-int size,min=0,max=0;
+int size,min=10^5,max=0;
 printf("please enter size of array = ");
 scanf("%d",&size);
 int arr[size];
