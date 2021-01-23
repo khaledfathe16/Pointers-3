@@ -9,10 +9,11 @@ int func(int *p , int *maxf,int *minf,int s);
 
  void main(void){
 
-int size,min,max=0;
+int size,min=0,max=0;
 printf("please enter size of array = ");
 scanf("%d",&size);
 int arr[size];
+
 func(arr,&max,&min,size);
 
 printf("max = %d\n",max);
@@ -28,7 +29,7 @@ scanf("%d",(p+i));
 
 for(int i=0;i<s;i++){
 
-    if(p[i]>=*maxf){
+    if(p[i]>=*maxf){                  // p[i] = (*(p+i)) Two syntax are equally
         *maxf=p[i];
 
     }
