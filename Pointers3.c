@@ -9,7 +9,7 @@ int func(int *p , int *maxf,int *minf,int s);
 
  void main(void){
 
-int size,min,max=0;
+int size,min,max;
 printf("please enter size of array = ");
 scanf("%d",&size);
 int arr[size];
@@ -26,6 +26,9 @@ int func(int *p,int *maxf,int *minf,int s){
 for(int i=0;i<s;i++){
 scanf("%d",(p+i));
 }
+
+*maxf=*p;
+*minf=*p;
 
 for(int i=0;i<s;i++){
 
